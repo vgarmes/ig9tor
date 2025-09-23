@@ -1,50 +1,25 @@
----
-import { Image } from "astro:assets";
-import HeroImage from "@/assets/ig9tor-hero-logo.webp";
----
-
 <section
-  class="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32"
+  class="container mx-auto flex min-h-screen flex-col items-center justify-center space-y-8 px-4 py-24 text-center md:py-32"
 >
-  <div class="space-y-4">
+  <div class="animate-fade-in-blur space-y-4">
     <div class="flex justify-center">
-      <Image
-        loading="eager"
-        fetchpriority="high"
-        src={HeroImage}
-        alt="ig9tor Hero Logo"
-        class="w-full max-w-[16rem]"
+      <img
+        src="/ig9tor-tagline-en.svg"
+        width="932.9"
+        height="104.5"
+        class="h-20 w-auto object-contain"
       />
     </div>
-    <h1
-      class="from-foreground via-foreground/90 to-foreground/70 bg-gradient-to-br from-30% bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
-    >
-      It starts with a spark
-    </h1><p
-      class="text-muted-foreground mx-auto max-w-[42rem] leading-normal sm:text-xl sm:leading-8"
+    <p
+      class="text-muted-foreground mx-auto max-w-[42rem] text-base leading-normal"
     >
       We invest in businesses and people who not only dream big but act on those
       dreams. We support those who do not wait for change but create it. A
       promise to create real impact.
     </p>
-  </div><div class="flex gap-4">
+
     <button
-      class="ring-offset-background focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-11 items-center justify-center gap-2 rounded-md px-8 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
-      >See more<svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-arrow-right ml-2 h-4 w-4"
-        ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
-      ></button
-    ><button
-      class="ring-offset-background focus-visible:ring-ring border-input bg-background hover:bg-accent hover:text-accent-foreground inline-flex h-11 items-center justify-center gap-2 rounded-md border px-8 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
+      class="ring-offset-background text-background focus-visible:ring-ring border-input hover:bg-foreground inline-flex h-11 items-center justify-center gap-2 rounded-md border bg-neutral-800 px-8 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
       >Apply</button
     >
   </div>

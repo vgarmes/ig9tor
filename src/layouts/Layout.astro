@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Navbar from "@/components/navbar.astro";
+import { Font } from "astro:assets";
 ---
 
 <!doctype html>
@@ -11,10 +12,11 @@ import Navbar from "@/components/navbar.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>ig9tor</title>
+    <Font cssVariable="--font-inter" preload />
   </head>
   <body class="bg-background font-sans">
     <Navbar />
-    <main class="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-4">
+    <main class="flex min-h-screen w-full flex-col">
       <slot />
     </main>
   </body>

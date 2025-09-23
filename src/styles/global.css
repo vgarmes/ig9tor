@@ -83,6 +83,24 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-border: var(--border);
+  /* ig9tor brand colors */
+  --color-brand-wine-red: #74252f;
+  --color-brand-accent-red: #8d211b;
+  --font-sans: var(--font-inter);
+
+  --animate-fade-in-blur: fade-in-blur 1s ease;
+  @keyframes fade-in-blur {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(20%);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateY(0%);
+    }
+  }
 }
 
 @layer base {
