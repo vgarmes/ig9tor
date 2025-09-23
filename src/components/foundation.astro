@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import Element from "@/assets/ig9tor-element.webp";
+---
+
+<section id="foundation" class="relative mx-auto w-full max-w-5xl px-4 py-30">
+  <div class="mb-12 max-w-md space-y-6">
+    <h2 class="text-foreground text-3xl font-semibold">The Foundation</h2>
+    <p>
+      We invest in businesses and people who not only dream big but act on those
+      dreams. We support those who do not wait for change but create it.
+    </p>
+    <p>
+      The name ig9tor is a tribute to this force. Inspired by the ignition
+      system of a jet engine, it symbolises the initial spark that sets
+      acceleration into motion – a catalyst for growth, speed, and innovation.
+    </p>
+
+    <p>A promise to create real impact.</p>
+  </div>
+
+  <Image
+    src={Element}
+    alt="IG9TOR Element"
+    class="absolute right-0 bottom-0 -z-10 h-[200px] w-[200px] object-cover opacity-10"
+  />
+</section>

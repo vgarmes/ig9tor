@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import Element from "@/assets/ig9tor-element.webp";
+---
+
+<section id="avi" class="relative mx-auto w-full max-w-5xl px-4 py-30">
+  <div class="mb-12 max-w-md space-y-6">
+    <h2 class="text-foreground text-3xl font-semibold">Avi</h2>
+    <p>
+      Jørgens passion for aviation will shine trough the part of the company
+      that we call avi. The main goal is to…..
+    </p>
+
+    <p>
+      This will now take shape under the new name <strong
+        class="whitespace-nowrap">ig9tor avi</strong
+      >.
+    </p>
+  </div>
+
+  <Image
+    src={Element}
+    alt="IG9TOR Element"
+    class="absolute right-0 bottom-0 -z-10 h-[200px] w-[200px] object-cover opacity-10"
+  />
+</section>

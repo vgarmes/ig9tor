@@ -1,7 +1,7 @@
-<nav
+<header
   class="bg-background/80 border-border fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-md"
 >
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">
         <a href="/" class="block">
@@ -13,26 +13,29 @@
           />
         </a>
         <div class="ml-10 hidden md:block">
-          <div class="flex items-center space-x-8">
+          <nav class="flex items-center space-x-8">
             <a
-              href="#"
-              class="text-sm text-neutral-600 transition-colors hover:text-black"
+              href="#invest"
+              class="data-active:text-brand-accent-red text-sm font-medium text-neutral-600 transition-colors hover:text-black"
+              aria-label="invest"
             >
               Invest
             </a>
             <a
-              href="#"
-              class="text-sm text-neutral-600 transition-colors hover:text-black"
+              href="#avi"
+              class="data-active:text-brand-accent-red text-sm font-medium text-neutral-600 transition-colors hover:text-black"
+              aria-label="avi"
             >
               Avi
             </a>
             <a
-              href="#"
-              class="text-sm text-neutral-600 transition-colors hover:text-black"
+              href="#foundation"
+              class="ata-active:text-brand-accent-red text-sm font-medium text-neutral-600 transition-colors hover:text-black"
+              aria-label="foundation"
             >
               Foundation
             </a>
-          </div>
+          </nav>
         </div>
       </div>
       <div class="flex items-center space-x-4">
@@ -50,4 +53,35 @@
       </div>
     </div>
   </div>
-</nav>
+</header>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navItems = document.querySelectorAll("nav a");
+  console.log(sections);
+  console.log(navItems);
+
+  const callback: IntersectionObserverCallback = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navItems.forEach((item) => {
+          if (item.getAttribute("aria-label") == entry.target.id) {
+            item.setAttribute("data-active", "true");
+          } else {
+            item.removeAttribute("data-active");
+          }
+        });
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.3,
+  });
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+</script>
