@@ -1,15 +1,10 @@
----
-import { Image } from "astro:assets";
-import Element from "@/assets/ig9tor-element.webp";
----
-
 <section
   id="invest"
-  class="relative mx-auto grid w-full max-w-5xl grid-cols-2 px-4 py-30"
+  class="mx-auto flex w-full max-w-5xl flex-col items-center px-4 pt-20"
 >
-  <div class="mb-12 max-w-md space-y-6">
-    <h2 class="text-foreground text-3xl font-semibold">Invest</h2>
-    <p>
+  <div class="mb-12 max-w-3xl space-y-6 text-center">
+    <h2 class="text-brand-wine-red text-3xl font-semibold">Invest</h2>
+    <p class="text-gray-700">
       Taking off the ground requires both speed and direction. It takes courage
       to set the course and a powerful engine to drive forward. The same applies
       to business – and this has always been the case for Jørgen Andersen.
@@ -26,7 +21,7 @@ import Element from "@/assets/ig9tor-element.webp";
     </p>
   </div>
 
-  <div class="flex w-full max-w-2xl items-end justify-end px-8">
+  <div class="mx-auto mb-20 flex w-full max-w-2xl px-8 text-center">
     <span
       class="relative block font-serif text-lg leading-[1.33] [&>p]:inline [&>p]:font-serif [&>p]:leading-[inherit] [&>p]:font-medium"
       ><span class="absolute left-[-14px] opacity-90">“</span><p
@@ -41,9 +36,5 @@ import Element from "@/assets/ig9tor-element.webp";
     >
   </div>
 
-  <Image
-    src={Element}
-    alt="IG9TOR Element"
-    class="absolute right-0 bottom-0 -z-10 h-[200px] w-[200px] object-cover opacity-10"
-  />
+  <div class="bg-brand-accent-red size-3 rounded-full"></div>
 </section>
