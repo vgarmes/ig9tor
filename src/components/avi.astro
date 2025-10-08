@@ -1,14 +1,11 @@
----
-import { Image } from "astro:assets";
-import Element from "@/assets/ig9tor-element.webp";
----
-
 <section
   id="avi"
   class="relative mx-auto flex w-full max-w-5xl flex-col items-center px-4 pt-20"
 >
   <div class="mb-20 flex flex-col items-center gap-6">
-    <h2 class="text-brand-wine-red text-3xl font-semibold">Avi</h2>
+    <h2 class="text-brand-wine-red font-garamond text-3xl font-semibold">
+      Avi
+    </h2>
     <p>
       Jørgens passion for aviation will shine trough the part of the company
       that we call avi. The main goal is to…..
@@ -21,10 +18,4 @@ import Element from "@/assets/ig9tor-element.webp";
     </p>
   </div>
   <div class="bg-brand-accent-red size-3 rounded-full"></div>
-
-  <Image
-    src={Element}
-    alt="IG9TOR Element"
-    class="absolute right-0 bottom-0 -z-10 h-[200px] w-[200px] object-cover opacity-10"
-  />
 </section>

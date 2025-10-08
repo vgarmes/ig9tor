@@ -18,6 +18,14 @@ export default defineConfig({
         weights: ["400 500"],
         subsets: ["latin"],
       },
+       {
+        provider: fontProviders.google(),
+        name: "EB Garamond",
+        cssVariable: "--font-garamond",
+        styles: ["normal"],
+        weights: ["400 600"],
+        subsets: ["latin"],
+      },
     ],
   },
 });
