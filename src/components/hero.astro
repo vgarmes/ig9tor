@@ -1,5 +1,10 @@
+---
+import { Image } from "astro:assets";
+import Element from "@/assets/ig9tor-element.webp";
+---
+
 <section
-  class="container mx-auto flex min-h-screen flex-col items-center justify-center px-4 py-24 text-center md:py-32"
+  class="relative mx-auto flex h-screen max-h-[900px] w-full max-w-5xl flex-col items-center justify-center px-4 py-12 text-center"
 >
   <div class="animate-fade-in-blur space-y-8">
     <div class="flex justify-center">
@@ -10,13 +15,10 @@
         class="h-20 w-auto object-contain"
       />
     </div>
-    <div>
-      <p class="mx-auto max-w-[42rem] text-base leading-normal text-pretty">
-        We invest in businesses and people who not only dream big but act on
-        those dreams.
-      </p>
-      <p>We support those who do not wait for change but create it.</p>
-      <p>A promise to create real impact.</p>
-    </div>
   </div>
+  <Image
+    src={Element}
+    alt="IG9TOR Element"
+    class="absolute right-0 bottom-0 -z-10 h-[300px] w-[300px] rotate-90 object-cover"
+  />
 </section>
