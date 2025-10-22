@@ -12,14 +12,6 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Inter",
-        cssVariable: "--font-inter",
-        styles: ["normal"],
-        weights: ["400 500"],
-        subsets: ["latin"],
-      },
-       {
-        provider: fontProviders.google(),
         name: "EB Garamond",
         cssVariable: "--font-garamond",
         styles: ["normal"],
