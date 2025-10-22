@@ -4,7 +4,7 @@ import Element from "@/assets/ig9tor-element.webp";
 ---
 
 <section
-  class="relative mx-auto flex h-screen max-h-[900px] w-full max-w-5xl flex-col items-center justify-center px-4 py-12 text-center"
+  class="relative mx-auto flex h-screen max-h-[900px] w-full max-w-5xl flex-col items-center justify-center overflow-hidden px-4 py-12 text-center lg:overflow-visible"
 >
   <div class="animate-fade-in-blur space-y-8">
     <div class="flex justify-center">
@@ -19,6 +19,6 @@ import Element from "@/assets/ig9tor-element.webp";
   <Image
     src={Element}
     alt="IG9TOR Element"
-    class="absolute right-0 bottom-0 -z-10 h-[300px] w-[300px] rotate-90 object-cover"
+    class="absolute right-0 bottom-0 -z-10 w-1/2 min-w-[300px] translate-1/4 rotate-105 object-cover"
   />
 </section>

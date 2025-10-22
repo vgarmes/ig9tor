@@ -3,17 +3,23 @@ import { Image } from "astro:assets";
 import HeroImage from "@/assets/jorgen.jpg";
 ---
 
-<section id="hero" class="bg-brand-wine-red relative">
+<section id="hero" class="bg-brand-wine-red">
   <div
-    class="mx-auto flex h-auto w-full max-w-5xl flex-col items-center justify-between gap-0 md:h-[500px] md:flex-row md:gap-6 lg:py-6"
+    class="mx-auto flex h-auto w-full max-w-5xl flex-col-reverse items-center justify-between gap-0 md:h-[500px] md:flex-row md:gap-6 lg:py-6"
   >
-    <div class="relative px-8 py-12 text-white">
-      <span class="absolute top-0 left-8 text-9xl opacity-15 transition-all"
+    <Image
+      src={HeroImage}
+      alt="joergen andersen"
+      class="h-[300px] w-full object-cover object-top md:h-full md:max-w-md md:object-center"
+      loading="eager"
+      format="webp"
+      fetchpriority="high"
+    />
+    <div class="relative px-8 py-14 text-white">
+      <span class="absolute top-0 left-8 text-9xl leading-none transition-all"
         >“</span
       >
-      <p
-        class="font-garamond [&>p]:font-garamond relative block text-[24px] leading-[1.33] md:text-[30px] [&>p]:inline [&>p]:leading-[inherit] [&>p]:font-medium"
-      >
+      <p class="font-garamond relative text-2xl font-medium">
         A forward-looking perspective is essential—those whote <em
           >anticipate the future</em
         > are best positioned to shape it, rather than be overtaken by it.
@@ -28,14 +34,5 @@ import HeroImage from "@/assets/jorgen.jpg";
         </div>
       </div>
     </div>
-
-    <Image
-      src={HeroImage}
-      alt="joergen andersen"
-      class="h-[300px] w-full object-cover object-top md:h-full md:max-w-md md:object-center"
-      loading="eager"
-      format="webp"
-      fetchpriority="high"
-    />
   </div>
 </section>
