@@ -1,6 +1,6 @@
 ---
-import "../styles/global.css";
-import Navbar from "@/components/navbar.astro";
+import NavbarSimple from "@/components/navbar-simple.astro";
+import "@/styles/global.css";
 import { Font } from "astro:assets";
 ---
 
@@ -16,7 +16,7 @@ import { Font } from "astro:assets";
     <Font cssVariable="--font-garamond" preload />
   </head>
   <body class="bg-background font-sans">
-    <Navbar />
+    <NavbarSimple />
     <main class="flex min-h-screen w-full flex-col">
       <slot />
     </main>
