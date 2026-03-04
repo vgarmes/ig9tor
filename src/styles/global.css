@@ -83,6 +83,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-border: var(--border);
+  --color-ring: var(--ring);
   /* ig9tor brand colors */
   --color-brand-wine-red: #74252f;
   --color-brand-accent-red: #8d211b;
@@ -105,6 +106,10 @@
 }
 
 @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
   html {
     height: 100%;
     scrollbar-gutter: stable;

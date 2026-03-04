@@ -3,35 +3,34 @@ import { Image } from "astro:assets";
 import HeroImage from "@/assets/jorgen.jpg";
 ---
 
-<section id="hero" class="bg-brand-wine-red">
+<section id="hero">
   <div
-    class="mx-auto flex h-auto w-full max-w-5xl flex-col-reverse items-center justify-between gap-0 md:h-[500px] md:flex-row md:gap-6 lg:py-6"
+    class="mx-auto flex h-auto w-full max-w-5xl flex-col justify-between gap-2 p-4 md:flex-row"
   >
     <Image
       src={HeroImage}
       alt="joergen andersen"
-      class="h-[300px] w-full object-cover object-top md:h-full md:max-w-md md:object-center"
+      class="h-[400px] rounded-lg object-cover object-top md:max-w-md md:object-center"
       loading="eager"
       format="webp"
       fetchpriority="high"
     />
-    <div class="relative my-8 px-8 pt-16 text-white">
-      <span class="absolute top-0 left-8 text-9xl leading-none transition-all"
-        >“</span
+    <div
+      class="relative flex flex-col justify-between rounded-lg bg-neutral-100 px-8 py-6"
+    >
+      <p
+        class="indent-[-0.4em] text-3xl leading-tight text-pretty before:text-inherit before:content-[open-quote] after:text-inherit after:content-[close-quote]"
       >
-      <p class="text-2xl font-medium">
         A forward-looking perspective is essential—those who <em
           >anticipate the future</em
         > are best positioned to shape it, rather than be overtaken by it.
-      </p><div
-        class="mt-[25px] ml-auto flex w-full items-center gap-2 md:w-[50%]"
-      >
-        <div class="flex flex-col md:ml-auto md:text-right">
-          <span
-            class="text-base leading-none font-medium text-nowrap no-underline opacity-90"
-            >Jørgen Andersen, CEO</span
-          >
-        </div>
+      </p>
+      <div class="flex flex-col">
+        <span
+          class="text-base leading-none font-medium text-nowrap no-underline"
+          >Jørgen Andersen</span
+        >
+        <span class="text-muted-foreground">CEO</span>
       </div>
     </div>
   </div>

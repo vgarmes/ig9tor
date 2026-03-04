@@ -1,36 +1,76 @@
-<section
-  id="invest"
-  class="mx-auto flex w-full max-w-5xl flex-col items-center px-4 pt-20"
->
-  <div class="max-w-3xl space-y-6 text-center">
-    <p>
-      Taking off the ground requires both speed and direction. It takes courage
-      to set the course and a powerful engine to drive forward. The same applies
-      to business – and this has always been the case for Jørgen Andersen.
-    </p>
-    <p>
-      After more than 60 years of innovation, growth, and technological
-      development, Jørgen has now passed on JAI A/S, marking the beginning of a
-      new chapter for Jørgen and future investments.
-    </p>
-    <p>
-      This will now take shape under the new name <strong
-        class="whitespace-nowrap">ig9tor invest</strong
-      >.
-    </p>
+---
+import SectionDots from "./section-dots.astro";
+---
+
+<section id="invest" class="my-20">
+  <div class="border-t border-b px-4">
+    <div
+      class="relative mx-auto grid w-full max-w-6xl grid-cols-1 border-r border-l px-12 py-20 md:grid-cols-2"
+    >
+      <div
+        class="bg-background absolute top-0 right-0 z-20 flex h-[20px] w-[20px] translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full"
+      >
+        <div class="bg-brand-wine-red h-[2px] w-[2px] rounded-full"></div>
+      </div>
+
+      <div
+        class="bg-background absolute top-0 left-0 z-20 flex h-[20px] w-[20px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full"
+      >
+        <div class="bg-brand-wine-red h-[2px] w-[2px] rounded-full"></div>
+      </div>
+      <div class="px-8 py-4">
+        <h2 class="text-4xl font-medium">
+          Taking off the ground requires both speed and direction.
+        </h2>
+      </div>
+      <div class="px-8 py-4">
+        <p class="text-muted-foreground text-lg">
+          It takes courage to set the course and a powerful engine to drive
+          forward. The same applies to business – and this has always been the
+          case for Jørgen Andersen.
+        </p>
+      </div>
+      <SectionDots />
+    </div>
   </div>
 
-  <div class="bg-brand-accent-red my-12 size-2 rounded-full"></div>
+  <div class="border-b px-4">
+    <div
+      class="relative mx-auto grid w-full max-w-6xl grid-cols-1 border-r border-l px-12 py-20 md:grid-cols-2"
+    >
+      <div class="px-8 py-4">
+        <h2 class="text-4xl font-medium">A new chapter.</h2>
+      </div>
+      <div class="px-8 py-4">
+        <p class="text-muted-foreground mb-2 text-lg">
+          After more than 60 years of innovation, growth, and technological
+          development with JAI A/S, Jørgen has passed the company on.
+        </p>
+        <p class="text-muted-foreground text-lg">
+          Going forward, his focus will be on future investments under the name <strong
+            >ig9tor invest.</strong
+          >
+        </p>
+      </div>
+      <SectionDots />
+    </div>
+  </div>
 
-  <div
-    class="text-brand-wine-red mx-auto mb-20 flex w-full max-w-2xl px-8 text-center"
-  >
-    <p class="text-lg font-medium opacity-90">
-      “We believe in visionary people, technological advancement, and
-      investments that make <em>a real difference</em>. <br
-        class="hidden md:block"
-      /> Our journey continues – and we look forward to taking the next step together
-      with you.”
-    </p>
+  <div class="border-b px-4">
+    <div
+      class="relative mx-auto w-full max-w-6xl border-r border-l px-12 py-20"
+    >
+      <div class="py-12 text-center">
+        <p class="mb-12 text-4xl font-medium">
+          We believe in visionary people, technological advancement, and
+          investments that make <em>a real difference</em>.
+        </p>
+        <p class="text-4xl font-medium">
+          Our journey continues – and we look forward to taking the next step
+          together with you.
+        </p>
+      </div>
+      <SectionDots />
+    </div>
   </div>
 </section>
