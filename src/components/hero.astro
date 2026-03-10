@@ -1,24 +1,25 @@
 ---
 import { Image } from "astro:assets";
 import Element from "@/assets/ig9tor-element.webp";
+import Tagline from "@/assets/ig9tor-tagline-en.svg";
+import { getImage } from "astro:assets";
+
+const backgroundImage = await getImage({ src: Element });
 ---
 
 <section
-  class="relative mx-auto flex h-screen max-h-[900px] w-full max-w-5xl flex-col items-center justify-center overflow-hidden px-4 py-12 text-center lg:overflow-visible"
+  class="relative mx-auto flex h-[calc(100vh-4rem)] w-full max-w-5xl flex-col items-center justify-center bg-white/70 bg-contain bg-center bg-no-repeat px-4 py-12 text-center bg-blend-lighten"
+  style={{ backgroundImage: `url("${backgroundImage.src}")` }}
 >
   <div class="animate-fade-in-blur space-y-8">
     <div class="flex justify-center">
-      <img
-        src="/ig9tor-tagline-en.svg"
+      <Image
+        src={Tagline}
+        alt="it starts with a spark"
         width="932.9"
         height="104.5"
         class="h-20 w-auto object-contain"
       />
     </div>
   </div>
-  <Image
-    src={Element}
-    alt="IG9TOR Element"
-    class="absolute right-0 bottom-0 -z-10 w-2/5 min-w-[250px] translate-1/4 rotate-105 object-cover"
-  />
 </section>
